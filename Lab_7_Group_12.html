@@ -59,8 +59,8 @@
                    0.0, 0.0, 0.0, 1.0);
 
     fColor = vColor;
-    gl_Position =  S * T * vPosition;
-    //gl_Position = S * rz * ry * rx * T * vPosition;
+    //gl_Position =  S * T * vPosition;
+    gl_Position = S * rz * ry * rx * T * vPosition;
   }
 
   </script>
