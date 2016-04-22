@@ -12,7 +12,6 @@
   varying vec4 fColor;
   uniform vec3 theta;
   uniform vec3 sl;
-  uniform vec3 tl;
 
   void main() {
     // Compute the sines and cosines of theta for each of
@@ -40,27 +39,9 @@
                   0.0, sl.y, 0.0, 0.0,
                   0.0, 0.0, sl.z, 0.0,
                   0.0, 0.0, 0.0, 1.0);
-									
- mat4 T = mat4(1.0, 0.0, 0.0, tl.x,
-                  0.0, 1.0, 0.0, tl.y,
-                  0.0, 0.0, 1.0, tl.z,
-                  0.0, 0.0, 0.0, 1.0);
-  
-
-
-  /*mat4 T = mat4(1.0, 0.0, 0.0, tl.x,
-                  0.0, 1.0, 0.0, tl.y,
-                  0.0, 0.0, 1.0, tl.z,
-                  0.0, 0.0, 0.0, 1.0);*/
-
-    mat4 iT = mat4(1.0, 0.0, 0.0, -tl.x,
-                   0.0, 1.0, 0.0, -tl.y,
-                   0.0, 0.0, 1.0, -tl.z,
-                   0.0, 0.0, 0.0, 1.0);
 
     fColor = vColor;
-    //gl_Position =  S * T * vPosition;
-    gl_Position = S * rz * ry * rx * T * vPosition;
+    gl_Position = S * rz * ry * rx * vPosition;
   }
 
   </script>

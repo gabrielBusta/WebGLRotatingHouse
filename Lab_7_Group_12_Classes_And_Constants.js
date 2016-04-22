@@ -14,13 +14,12 @@ var Color = {
 };
 
 // Axis enumeration
-var xAxis = 0;
-var yAxis = 1;
-var zAxis = 2;
+var x = 0;
+var y = 1;
+var z = 2;
 
 // Key codes
-var up = 38, down = 40, left = 37, right = 39;
-var x = 88, y = 89, z = 90;
+var xkey = 88, ykey = 89, zkey = 90;
 
 /*********************
  * Geometric Objects *
