@@ -25,13 +25,13 @@ window.onload = function init() {
 function render() {
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   
-	// Rotation Animation
-	if (rotating == true) {
-		theta[axis] += rotatingStep;
-	}
+  // Rotation Animation
+  if (rotating == true) {
+    theta[axis] += rotatingStep;
+  }
 
-	// Idle Animation
-	if (!rotating) {
+  // Idle Animation
+  if (!rotating) {
     sl[x] += scalingStep;
     sl[y] += scalingStep;
     sl[z] += scalingStep;
@@ -97,7 +97,7 @@ window.onkeydown = function(e) {
     axis = y;
   } else if (e.keyCode == zkey) {
     rotating = true;
-		axis = z;
+    axis = z;
   }
 };
 
@@ -186,7 +186,7 @@ function initComponents() {
   x_origin = 0.002;
   y_origin = -0.0020;
   obj_radius = 0.00075;
- newComponent = new Circle(Color.Bush_Green, 
+  newComponent = new Circle(Color.Bush_Green, 
                             vec3(x_origin, y_origin, -0.0000002),
                             obj_radius);
   components.push(newComponent);
@@ -212,7 +212,7 @@ function initComponents() {
                             vec3(x_origin - (obj_width/2),y_origin - (obj_hieght/2), -0.0000002));
   components.push(newComponent);
   
- // Chimney
+  // Chimney
   x_origin = 0.0035;
   y_origin = 0.003;
   obj_width = 0.00125;
@@ -230,9 +230,9 @@ function initComponents() {
   obj_width = 0.01;
   obj_hieght = 0.002;
   newComponent = new Triangle(Color.Gray,
-                            vec3(x_origin -  (obj_width/2), y_origin + (obj_hieght/2), -0.0000001), 
-                            vec3(x_origin - (obj_width/2), y_origin - (obj_hieght/2), -0.0000001),
-                            vec3(x_origin + (obj_width/2) + 0.001,y_origin - (obj_hieght/2) , -0.0000001));
+                              vec3(x_origin -  (obj_width/2), y_origin + (obj_hieght/2), -0.0000001), 
+                              vec3(x_origin - (obj_width/2), y_origin - (obj_hieght/2), -0.0000001),
+                              vec3(x_origin + (obj_width/2) + 0.001,y_origin - (obj_hieght/2) , -0.0000001));
   components.push(newComponent); 
   
   // Rightmost window

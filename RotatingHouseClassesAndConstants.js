@@ -1,13 +1,13 @@
 // Color dictionary
 var Color = {
   Black: vec4(0.0, 0.0, 0.0, 1.0),
-	Gray: vec4(0.5, 0.5, 0.5, 1.0),
+  Gray: vec4(0.5, 0.5, 0.5, 1.0),
   Red: vec4(1.0, 0.0, 0.0, 1.0),
   Yellow: vec4(1.0, 1.0, 0.0, 1.0),
   Green: vec4(0.0, 1.0, 0.0, 1.0),
-	Bush_Green: vec4(0.34, 0.47, 0.14, 1.0),
+  Bush_Green: vec4(0.34, 0.47, 0.14, 1.0),
   Sky_Blue: vec4(0.6, 0.85, 0.91, 1.0),
-	Navy_Blue: vec4(0.43, 0.57, 0.74, 1.0),
+  Navy_Blue: vec4(0.43, 0.57, 0.74, 1.0),
   Magenta: vec4(1.0, 0.0, 1.0, 1.0),
   White: vec4(1.0, 1.0, 1.0, 1.0),
   Cyan: vec4(0.0, 1.0, 1.0, 1.0) 
