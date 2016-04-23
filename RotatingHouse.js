@@ -92,7 +92,7 @@ window.onkeydown = function(e) {
   if (e.keyCode == xkey) {
     rotating = true;
     axis = x;
-  } else if (e.keyCode == ykey) {;
+  } else if (e.keyCode == ykey) {
     rotating = true;
     axis = y;
   } else if (e.keyCode == zkey) {
